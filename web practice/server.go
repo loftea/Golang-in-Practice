@@ -12,7 +12,7 @@ const maxRead = 25
 func main() {
 	flag.Parse()
 	if flag.NArg() != 2 {
-		panic("请输入 Host 和 port！")
+		panic("请输入 Host 和 Port！")
 	}
 	hostAndPort := fmt.Sprintf("%s:%s", flag.Arg(0), flag.Arg(1))
 	listener := initServer(hostAndPort)
